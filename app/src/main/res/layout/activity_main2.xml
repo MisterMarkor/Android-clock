@@ -3,49 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#9D52BF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:background="#9D52BF"
+    tools:context=".MainActivity2" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="229dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="get a       digital clock here!"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="53dp"
+        android:background="#DFDF00"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.221">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="124dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="FREE"
-        android:textColor="#E9AA2C"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:layout_width="68dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:text="Your name " />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="284dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+    </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/BackButtonP2"
+        android:layout_width="134dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/schermafbeelding_2026_09_29_111701" />
+        app:srcCompat="@drawable/schermafbeelding_2026_10_07_141405" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

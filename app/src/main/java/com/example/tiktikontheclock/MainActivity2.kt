@@ -1,6 +1,9 @@
-package com.example.digital_clock_android_studio
+package com.example.tiktikontheclock
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +19,11 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val backbuttonPage2 = findViewById
+        val button = findViewById<ImageButton>(R.id.BackButtonP2)
+        button.setOnClickListener {
+            Toast.makeText(this, "(max is een geit)", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.digital_clock_android_studio
+package com.example.tiktikontheclock
 
 import org.junit.Test
 
