@@ -10,6 +10,37 @@
 
     <LinearLayout
         android:layout_width="361dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:background="#DFDF00"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="68dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:text="Current Time"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/CurrentTimeedit"
+            android:layout_width="284dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
         android:layout_height="53dp"
         android:background="#DFDF00"
         android:orientation="horizontal"
@@ -28,13 +59,18 @@
             android:text="Your name " />
 
         <EditText
+<<<<<<< HEAD
             android:id="@+id/edittextname"
+=======
+            android:id="@+id/YourNameedit"
+>>>>>>> 5a818840a5f7cf99edc5af40a1d0d7c7acb188ee
             android:layout_width="284dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
+<<<<<<< HEAD
             android:hint="Name"
             android:inputType="text"
             android:text="" />
@@ -70,6 +106,9 @@
             android:hint="Time"
             android:inputType="text"
             android:text="" />
+=======
+            android:inputType="text" />
+>>>>>>> 5a818840a5f7cf99edc5af40a1d0d7c7acb188ee
     </LinearLayout>
 
     <ImageButton
@@ -82,5 +121,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/schermafbeelding_2026_10_07_141405" />
+
+    <ImageButton
+        android:id="@+id/NextButtonP2"
+        android:layout_width="134dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/schermafbeelding_2026_10_20_113520" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

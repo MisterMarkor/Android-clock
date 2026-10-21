@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
+import android.widget.EditText
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +19,18 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val button = findViewById<ImageButton>(R.id.BackButtonP2)
-        button.setOnClickListener {
+
+        val name = findViewById<EditText>(R.id.YourNameedit)
+        val naam = name.text.toString();
+        val NextbuttonP2 = findViewById<ImageButton>(R.id.NextButtonP2)
+        NextbuttonP2.setOnClickListener {
+            Toast.makeText(this, "(cuz he is da goat)", Toast.LENGTH_SHORT).show()
+
+        }
+
+        val BackButtonP2 = findViewById<ImageButton>(R.id.BackButtonP2)
+        BackButtonP2.setOnClickListener {
+
             Toast.makeText(this, "(max is een geit)", Toast.LENGTH_LONG).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
