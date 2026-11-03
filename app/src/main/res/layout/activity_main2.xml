@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.313">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/CurrentTimeText"
             android:layout_width="68dp"
             android:layout_height="53dp"
             android:layout_weight="1"
@@ -33,6 +33,7 @@
             android:layout_width="284dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
+            android:hint=" 00:00"
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
@@ -52,26 +53,21 @@
 
         <TextView
             android:id="@+id/YourNameText"
-            android:textSize="20dp"
             android:layout_width="68dp"
             android:layout_height="53dp"
             android:layout_weight="1"
-            android:text="Your name " />
+            android:text="Your name "
+            android:textSize="20dp" />
 
         <EditText
-<<<<<<< HEAD
-            android:id="@+id/edittextname"
-=======
             android:id="@+id/YourNameedit"
->>>>>>> 5a818840a5f7cf99edc5af40a1d0d7c7acb188ee
             android:layout_width="284dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
-<<<<<<< HEAD
-            android:hint="Name"
+            android:hint=" Name"
             android:inputType="text"
             android:text="" />
     </LinearLayout>
@@ -85,30 +81,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33">
+        app:layout_constraintVertical_bias="0.417">
 
         <TextView
-            android:id="@+id/CurrentTimeText"
+            android:id="@+id/YourEmailText"
             android:layout_width="68dp"
             android:layout_height="53dp"
             android:layout_weight="1"
-            android:text="Current Time"
+            android:text="Your  Email"
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edittexttime"
+            android:id="@+id/YourEmailEdit"
             android:layout_width="284dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
-            android:hint="Time"
+            android:hint=" lorem@ipsum.nl"
             android:inputType="text"
             android:text="" />
-=======
-            android:inputType="text" />
->>>>>>> 5a818840a5f7cf99edc5af40a1d0d7c7acb188ee
     </LinearLayout>
 
     <ImageButton

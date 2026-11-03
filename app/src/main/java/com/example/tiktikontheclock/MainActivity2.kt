@@ -25,6 +25,8 @@ class MainActivity2 : AppCompatActivity() {
         val NextbuttonP2 = findViewById<ImageButton>(R.id.NextButtonP2)
         NextbuttonP2.setOnClickListener {
             Toast.makeText(this, "(cuz he is da goat)", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
 
         }
 
