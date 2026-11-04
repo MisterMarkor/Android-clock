@@ -20,12 +20,21 @@ class MainActivity2 : AppCompatActivity() {
             insets
         }
 
-        val name = findViewById<EditText>(R.id.YourNameedit)
-        val naam = name.text.toString();
+
         val NextbuttonP2 = findViewById<ImageButton>(R.id.NextButtonP2)
         NextbuttonP2.setOnClickListener {
-            Toast.makeText(this, "(cuz he is da goat)", Toast.LENGTH_SHORT).show()
+            val name = findViewById<EditText>(R.id.YourNameedit)
+            val naam = name.text.toString();
+            val time = findViewById<EditText>(R.id.CurrentTimeedit)
+            val tijd = time.text.toString();
+            val mail = findViewById<EditText>(R.id.YourEmailEdit)
+            val email = mail.text.toString();
+            Toast.makeText(this, "(MA3)", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity3::class.java)
+            intent.putExtra("naam", naam)
+            intent.putExtra("time", tijd)
+            intent.putExtra("email", email)
+
             startActivity(intent)
 
         }
@@ -33,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
         val BackButtonP2 = findViewById<ImageButton>(R.id.BackButtonP2)
         BackButtonP2.setOnClickListener {
 
-            Toast.makeText(this, "(max is een geit)", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "(MA1)", Toast.LENGTH_LONG).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
