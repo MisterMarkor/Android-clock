@@ -38,7 +38,9 @@ class MainActivity3 : AppCompatActivity() {
 
         nextbuttonP3.setOnClickListener {
             Toast.makeText(this, "(MA3)", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainActivity3::class.java)
+            val intent = Intent(this, MainActivity4::class.java)
+            intent.putExtra("time", time)
+
             startActivity(intent)
 
         }

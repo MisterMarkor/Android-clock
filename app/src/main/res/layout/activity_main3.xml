@@ -69,16 +69,16 @@
 
     <TextView
         android:id="@+id/Incorectp3"
-        android:layout_width="239dp"
-        android:layout_height="92dp"
-        android:textSize="17dp"
+        android:layout_width="236dp"
+        android:layout_height="109dp"
         android:text="If any of this information is incorrect please press back. If the information is correct press next."
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/whiteboxp3"
         app:layout_constraintEnd_toEndOf="@+id/whiteboxp3"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toStartOf="@+id/whiteboxp3"
         app:layout_constraintTop_toTopOf="@+id/whiteboxp3"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/NameInBoxp3"
