@@ -37,7 +37,7 @@ class MainActivity3 : AppCompatActivity() {
         val backButtonP3 = findViewById<ImageButton>(R.id.BackButtonP3)
 
         nextbuttonP3.setOnClickListener {
-            Toast.makeText(this, "(MA3)", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity4::class.java)
             intent.putExtra("time", time)
 
@@ -46,7 +46,7 @@ class MainActivity3 : AppCompatActivity() {
         }
 
         backButtonP3.setOnClickListener {
-            Toast.makeText(this, "(MA2)", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
 

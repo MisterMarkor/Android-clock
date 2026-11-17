@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
         val button = findViewById<ImageButton>(R.id.BIGFATBUTTON)
         button.setOnClickListener {
-            Toast.makeText(this, "MA2",Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "",Toast.LENGTH_LONG).show()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }

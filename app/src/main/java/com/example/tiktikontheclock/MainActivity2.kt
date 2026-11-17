@@ -29,7 +29,7 @@ class MainActivity2 : AppCompatActivity() {
             val tijd = time.text.toString();
             val mail = findViewById<EditText>(R.id.YourEmailEdit)
             val email = mail.text.toString();
-            Toast.makeText(this, "(MA3)", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity3::class.java)
             intent.putExtra("naam", naam)
             intent.putExtra("time", tijd)
@@ -42,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
         val BackButtonP2 = findViewById<ImageButton>(R.id.BackButtonP2)
         BackButtonP2.setOnClickListener {
 
-            Toast.makeText(this, "(MA1)", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "", Toast.LENGTH_LONG).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
